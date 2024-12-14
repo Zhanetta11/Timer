@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.deadline-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 100px 0 20px;
+}
+
+.deadline-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.set-deadline-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #003049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.set-deadline-button:hover {
+    background-color: #005b79;
+}
+
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.timer__total {
+    background-color: #003049;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    line-height: 70px;
+}
+
+.timer__days,
+.timer__hours,
+.timer__minutes,
+.timer__seconds {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #d00000;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(15, 11, 11, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timer__days:hover,
+.timer__hours:hover,
+.timer__minutes:hover,
+.timer__seconds:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
